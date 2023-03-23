@@ -12,6 +12,7 @@ const Galery = () => {
   useEffect(() => {
     window.scrollTo(0, mySecondRef.current.offsetHeight - 550);
     const headerScroll = document.querySelector('header');
+
     if (location.pathname === '/Galery') {
       headerScroll.classList.add('headerPink');
       headerScroll.classList.remove('header');

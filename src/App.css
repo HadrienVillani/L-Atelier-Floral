@@ -500,8 +500,14 @@ footer input {
   .containerCarouselText h2 {
     margin-bottom: 10px;
   }
+  .containerCarouselText aside {
+    width: 90%;
+  }
   .introduction div {
     padding: 50px;
+  }
+  .introduction h1 {
+    text-align: center;
   }
   .firstPart {
     flex-direction: column;
@@ -517,6 +523,7 @@ footer input {
   }
   .thirdPart h2 {
     margin: 0;
+    text-align: center;
   }
   .thirdPart aside div {
     width: 80%;
@@ -537,11 +544,13 @@ footer input {
     padding: 0 20px 0 20px;
   }
   .header a {
-    font-size: 12px;
     padding: 0px;
   }
   .headerScrolled a {
     padding: 0px;
+  }
+  .header li {
+    font-size: 1.6em;
   }
   .headerScrolled ul {
     margin: 0;
@@ -550,9 +559,20 @@ footer input {
     padding: 0 20px 0 20px;
   }
   .headerScrolled li {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
-
+  .headerPink ul {
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  .headerPink li {
+    font-size: 1.6em;
+  }
+  .headerPink a {
+    padding: 0;
+  }
   .containerButton {
     align-items: end;
     height: 95vh;
@@ -561,13 +581,14 @@ footer input {
     font-size: 40px !important;
   }
   .containerCarouselText aside {
-    width: 70%;
+    width: 90%;
   }
   .containerCarouselText {
     top: 20%;
   }
   .carrouselContainer h2 {
-    font-size: 40px;
+    font-size: 30px;
+    width: 100%;
   }
   .carrouselContainer p {
     font-size: 18px;
@@ -597,6 +618,9 @@ footer input {
   .thirdPart aside div {
     padding: 20px;
   }
+  .thirdPart h2 {
+    text-align: center;
+  }
   footer {
     padding: 50px 50px 49px 50px;
   }
@@ -608,5 +632,8 @@ footer input {
   }
   .galeryPart img {
     width: 30vw;
+  }
+  .galeryPart h2 {
+    text-align: center;
   }
 }
