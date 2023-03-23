@@ -1,0 +1,602 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700&family=Playfair+Display&display=swap');
+:root {
+  --pink: #ef959c;
+  --title: 'Playfair Display', serif;
+  --titleSize: 40px;
+  --textSize: 20px;
+  --subTitleSize: 25px;
+  --text: 'Mulish', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  color: var(--pink);
+  font-size: var(--titleSize);
+}
+h3 {
+  color: grey;
+  font-size: var(--subTitleSize);
+  font-family: var(--title);
+  font-size: 30px;
+}
+p {
+  font-size: var(--textSize);
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: var(--title);
+  padding: 15px 30px 15px 30px;
+  transition: 0.3s;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--text);
+  scroll-behavior: smooth;
+}
+/* -----------------------------------Header-------------------------------- */
+.header {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0 30px 0;
+  z-index: 2;
+  position: fixed;
+  transition: 1s;
+}
+.header ul {
+  display: flex;
+  margin: 0;
+  margin-right: 50px;
+}
+.header li {
+  font-family: var(--title);
+  font-size: 2em;
+  color: white;
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-weight: 400;
+}
+.header li:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.header a {
+  font-weight: lighter;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px 30px 0px 25px;
+}
+
+.headerScrolled {
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0 30px 0;
+  z-index: 2;
+  position: fixed;
+  transition: 1s;
+}
+
+.headerScrolled a {
+  font-weight: lighter;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px 30px 0px 25px;
+}
+.headerScrolled ul {
+  display: flex;
+  margin: 0;
+  margin-right: 50px;
+}
+.headerScrolled li {
+  color: var(--pink);
+  font-family: var(--title);
+  font-size: 30px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-weight: 400;
+}
+.headerScrolled li:hover {
+  color: var(--pink);
+  border-bottom: 1px solid var(--pink);
+}
+.headerPink {
+  background-color: var(--pink);
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0 30px 0;
+  z-index: 2;
+  position: fixed;
+  transition: 1s;
+}
+.headerPink a {
+  font-weight: lighter;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px 30px 0px 25px;
+}
+.headerPink ul {
+  display: flex;
+  margin: 0;
+  margin-right: 50px;
+}
+.headerPink li {
+  color: white;
+  font-family: var(--title);
+  font-size: 30px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-weight: 400;
+}
+.headerPink li:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrouselContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.containerCarouselText {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.containerCarouselText aside {
+  width: 50%;
+}
+.containerCarouselText h2 {
+  font-family: var(--title);
+  font-size: 60px;
+  color: white;
+}
+.containerCarouselText button {
+  margin-top: 30px;
+  color: white;
+  background-color: var(--pink);
+  cursor: pointer;
+}
+.containerCarouselText button:hover {
+  background-color: white;
+  color: var(--pink);
+  transition-duration: 0.5s;
+}
+.containerCarouselPicture {
+  width: 100%;
+}
+.carouselPicture {
+  height: 98vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 25% 25%;
+  animation-name: carousel;
+  animation-duration: 2s;
+}
+@keyframes carousel {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.not-active {
+  display: none;
+}
+.activePicture {
+  display: block;
+  opacity: 1;
+}
+.containerButton {
+  position: absolute;
+  height: 85vh;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.carrouselButton {
+  font-family: var(--title);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 60px;
+  margin: 0;
+  padding: 10px;
+  color: var(--pink);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+.carrouselButton:hover {
+  color: var(--pink);
+}
+
+.introduction {
+  margin-top: 20vh;
+  opacity: 0;
+}
+.introduction div {
+  background-color: white;
+  box-shadow: 3px 5px 20px rgb(153, 153, 153);
+  padding: 70px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.introduction h1 {
+  font-family: var(--title);
+  color: var(--pink);
+  margin-top: 10px;
+  font-size: var(--titleSize);
+}
+.introduction h5 {
+  color: grey;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+.introduction p {
+  color: grey;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.introduction button {
+  margin-top: 30px;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  background-color: white;
+}
+.introduction button:hover {
+  color: white;
+  background-color: var(--pink);
+}
+.firstPart {
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 70%;
+  color: grey;
+  padding: 60px;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+}
+.firstPart img {
+  width: 400px;
+  padding: 50px;
+}
+
+.firstPart div {
+  padding-bottom: 15px;
+  width: 70%;
+}
+.firstPart p {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--pink);
+}
+.secondPart {
+  padding: 150px 50px 150px 50px;
+  background-color: var(--pink);
+  opacity: 0;
+}
+.secondPart div {
+  width: 60%;
+  padding: 0px 50px 50px 50px;
+  border: 1px solid white;
+  border-top: 0px;
+}
+.secondPart h2 {
+  margin-top: 0;
+  color: white;
+}
+.secondPart p {
+  font-weight: lighter;
+  color: white;
+}
+.thirdPart {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0 120px 0;
+  opacity: 0;
+}
+.thirdPart aside div {
+  border: 0px;
+  border-bottom: 1px solid var(--pink);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 40px 40px 40px;
+  color: grey;
+  padding: 50px;
+}
+.thirdPart h2 {
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+.thirdPart h3 {
+  text-align: center;
+  margin: 10px;
+  color: var(--pink);
+}
+.thirdPart h4 {
+  margin: 0px;
+  color: grey;
+}
+.thirdPart p {
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+.thirdPart aside {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.galeryPart {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}
+.galeryPart h2 {
+  margin-bottom: 15px;
+}
+.galeryPart aside {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeryPart img {
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+  object-position: 25% 25%;
+  transition: 1s;
+  margin: 15px;
+}
+.galeryPart img:hover {
+  background-color: var(--pink);
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+.galeryPart button {
+  font-family: var(--title);
+  padding: 15px 30px 15px 30px;
+  margin-top: 30px;
+  color: var(--pink);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid var(--pink);
+  margin-bottom: 50px;
+  background-color: white;
+}
+.galeryPart button:hover {
+  background-color: var(--pink);
+  color: white;
+  transition-duration: 0.5s;
+}
+footer {
+  background-color: var(--pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 60px 49px 60px;
+  width: 100%;
+}
+footer h2 {
+  margin-top: 55px;
+  color: white;
+}
+footer label {
+  color: grey;
+  font-size: var(--subTitleSize);
+  font-family: var(--title);
+  font-size: 30px;
+  margin: 0;
+  color: white;
+  margin-bottom: 10px;
+}
+footer form {
+  margin-top: 30px;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer form div {
+  margin-bottom: 59px;
+  display: flex;
+  flex-direction: column;
+}
+footer form div:nth-child(3) {
+  margin-bottom: 0px;
+}
+footer input {
+  border: 0px;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+.inputMessage {
+  border: 1px solid white;
+  height: 20vh;
+  width: 97%;
+  padding: 10px;
+  text-align: justify;
+  background-color: transparent;
+  font-family: var(--text);
+  color: white;
+}
+.inputSend {
+  padding: 15px 40px 15px 40px;
+  border: 1px solid white;
+  color: white;
+  font-family: var(--title);
+  font-size: var(--textSize);
+  transition: 1s;
+  margin: auto;
+  cursor: pointer;
+  background-color: transparent;
+}
+.inputSend:hover {
+  background-color: white;
+  color: var(--pink);
+}
+
+.animation {
+  transition: 1.1s;
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .containerCarouselText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .containerCarouselText h2 {
+    margin-bottom: 10px;
+  }
+  .introduction div {
+    padding: 50px;
+  }
+  .firstPart {
+    flex-direction: column;
+  }
+  .firstPart div {
+    width: 80%;
+  }
+  .firstPart p {
+    padding-bottom: 40px;
+  }
+  .firstPart img {
+    width: 80%;
+  }
+  .thirdPart h2 {
+    margin: 0;
+  }
+  .thirdPart aside div {
+    width: 80%;
+  }
+  .thirdPart aside p {
+    width: 100%;
+    text-align: center;
+  }
+  footer form {
+    width: 60%;
+  }
+}
+@media (max-width: 550px) {
+  .header ul {
+    margin: 0;
+  }
+  .header a {
+    font-size: 12px;
+  }
+  .headerScrolled ul {
+    margin-right: 0;
+  }
+  .headerScrolled li {
+    font-size: 1.5em;
+  }
+
+  .containerButton {
+    align-items: end;
+    height: 90vh;
+  }
+  .containerButton p {
+    font-size: 40px !important;
+  }
+  .containerCarouselText aside {
+    width: 70%;
+  }
+  .containerCarouselText {
+    top: 25%;
+  }
+  .carrouselContainer h2 {
+    font-size: 40px;
+  }
+  .carrouselContainer p {
+    font-size: 18px;
+  }
+  .introduction div {
+    box-shadow: none;
+    width: 80%;
+  }
+  .firstPart {
+    padding: 0;
+    width: 80%;
+  }
+  .firstPart img {
+    width: 100%;
+    padding: 0;
+  }
+  .firstPart div {
+    width: 100%;
+  }
+  .secondPart {
+    padding: 100px 30px 100px 30px;
+  }
+  .secondPart div {
+    width: 100%;
+    padding: 0px 30px 50px 30px;
+  }
+  .thirdPart aside div {
+    padding: 20px;
+  }
+  footer {
+    padding: 50px 50px 49px 50px;
+  }
+  footer form {
+    width: 100%;
+  }
+  .galeryPart aside {
+    width: 90%;
+  }
+  .galeryPart img {
+    width: 30vw;
+  }
+}
