@@ -532,12 +532,22 @@ footer input {
 @media (max-width: 550px) {
   .header ul {
     margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
   }
   .header a {
     font-size: 12px;
+    padding: 0px;
+  }
+  .headerScrolled a {
+    padding: 0px;
   }
   .headerScrolled ul {
-    margin-right: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
   }
   .headerScrolled li {
     font-size: 1.5em;
@@ -545,7 +555,7 @@ footer input {
 
   .containerButton {
     align-items: end;
-    height: 90vh;
+    height: 95vh;
   }
   .containerButton p {
     font-size: 40px !important;
@@ -554,7 +564,7 @@ footer input {
     width: 70%;
   }
   .containerCarouselText {
-    top: 25%;
+    top: 20%;
   }
   .carrouselContainer h2 {
     font-size: 40px;
