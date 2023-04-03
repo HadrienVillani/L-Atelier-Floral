@@ -572,6 +572,9 @@ footer input {
   .headerPink a {
     padding: 0;
   }
+  .carouselPicture {
+    height: 80vh;
+  }
   .containerButton {
     align-items: end;
     justify-content: center;
