@@ -576,7 +576,7 @@ footer input {
     height: 75vh;
   }
   .containerButton {
-    align-items: end;
+    align-items: center;
     justify-content: center;
     height: 95vh;
   }
