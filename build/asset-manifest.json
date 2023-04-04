@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/l-atelier-floral/static/css/main.2c720032.css",
-    "main.js": "/l-atelier-floral/static/js/main.707e086b.js",
+    "main.css": "/l-atelier-floral/static/css/main.e188263e.css",
+    "main.js": "/l-atelier-floral/static/js/main.b03136fb.js",
     "static/media/fleurs2.jpg": "/l-atelier-floral/static/media/fleurs2.c216abb796fdf27e0791.jpg",
     "static/media/roses.jpg": "/l-atelier-floral/static/media/roses.20604396768faa1c50b8.jpg",
     "static/media/fleurs1.jpg": "/l-atelier-floral/static/media/fleurs1.bb2accd437c90a11ff0f.jpg",
     "static/media/fleurs3.jpg": "/l-atelier-floral/static/media/fleurs3.b722473dbb06687f6b21.jpg",
     "static/media/v914-ning-39.jpg": "/l-atelier-floral/static/media/v914-ning-39.5ff2a0dac436998c7d4b.jpg",
     "index.html": "/l-atelier-floral/index.html",
-    "main.2c720032.css.map": "/l-atelier-floral/static/css/main.2c720032.css.map",
-    "main.707e086b.js.map": "/l-atelier-floral/static/js/main.707e086b.js.map"
+    "main.e188263e.css.map": "/l-atelier-floral/static/css/main.e188263e.css.map",
+    "main.b03136fb.js.map": "/l-atelier-floral/static/js/main.b03136fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c720032.css",
-    "static/js/main.707e086b.js"
+    "static/css/main.e188263e.css",
+    "static/js/main.b03136fb.js"
   ]
 }

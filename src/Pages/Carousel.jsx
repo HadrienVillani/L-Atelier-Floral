@@ -80,10 +80,10 @@ function Carousel() {
       </div>
       <div className='containerButton'>
         <p className='carrouselButton' onClick={() => setCount(count + 1)}>
-          Gauche
+          - Gauche
         </p>
         <p className='carrouselButton' onClick={() => setCount(count - 1)}>
-          Droite
+          Droite -
         </p>
       </div>
     </div>
