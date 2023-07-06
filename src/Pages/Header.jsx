@@ -5,7 +5,7 @@ const Header = () => {
     <header className='header'>
       <ul>
         <Link to={'/Home'}>
-          <li>Acceuil</li>
+          <li>Accueil</li>
         </Link>
         <Link to={'/Galery'}>
           <li>Galerie</li>
